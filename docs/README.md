@@ -1,4 +1,4 @@
-# How to add a new soundtrack:
+# How To Add a Custom Soundtrack
 To add a new soundtrack, make a new folder, in the "public/music" folder.
 
 ![A new folder named "tutorial" in the music folder.](1.png)

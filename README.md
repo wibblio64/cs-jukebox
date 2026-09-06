@@ -1,4 +1,4 @@
-# Cave Story Jukebox
+# CS Jukebox
 ![Preview image](preview.png)
 
 Runs on Express & Nunjucks

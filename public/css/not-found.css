@@ -1,0 +1,10 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    right: 20%;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+}

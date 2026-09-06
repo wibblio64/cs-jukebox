@@ -3,11 +3,15 @@
     <head>
         <!-- stylesheets -->
         <link rel="icon" type="image/png" href="/images/favicon.png">
+        <link rel="stylesheet" href="/css/fonts.css"/>
         <link rel="stylesheet" href="/css/styles.css"/>
+        <link rel="stylesheet" href="/css/not-found.css"/>
+        <link rel="stylesheet" href="/css/menu.css"/>
+        <link rel="stylesheet" href="/css/radio.css"/>
 
         <!-- scripts -->
         <script src="/js/lib/howler.min.js"></script>
-        <script src="/js/sue.js"></script>
+        <script src="/js/radio.js"></script>
 
         <!-- metadata -->
         <meta charset="UTF-8"/>
@@ -16,7 +20,15 @@
     </head>
     <body>
         <div id="root">
-        {% block content %}{% endblock %}
+            <div class="moon"></div>
+            <div class="cloud-4"></div>
+            <div class="cloud-3"></div>
+            <div class="cloud-2"></div>
+            <div class="cloud-1"></div>
+            <div class="dragon">
+                <div class="dragon-inner"></div>
+            </div>
+            {% block content %}{% endblock %}
         </div>
     </body>
 </html>

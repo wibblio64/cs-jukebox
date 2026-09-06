@@ -4,7 +4,7 @@ let track = null;
 function toggleTrack() {
     if (track === null) return;
 
-    const toggleEl = document.querySelector("#track-toggle");
+    const toggleEl = document.querySelector("#radio-toggle");
     if (toggled) {
         resumeTrack();
         toggled = false;
@@ -36,10 +36,10 @@ function startTrack(src, name) {
     });
     track.play();
 
-    const currentTrackEl = document.querySelector("#current-track");
+    const currentTrackEl = document.querySelector("#radio-current-track");
     currentTrackEl.innerHTML = `Currently playing <span style="font-style: italic;">"${name}</span>"`;
 
-    const toggleEl = document.querySelector("#track-toggle");
+    const toggleEl = document.querySelector("#radio-toggle");
     toggleEl.style.backgroundImage = `url("/images/pause.png")`;
     toggleEl.style.cursor = "pointer";
     toggled = false;

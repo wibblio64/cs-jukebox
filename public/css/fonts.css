@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Courier New";
+    font-style: italic;
+    font-weight: normal;
+    font-display: swap;
+    src: url("/fonts/courier-new/couri.ttf");
+}
+
+@font-face {
+    font-family: "Courier New";
+    font-style: italic;
+    font-weight: bold;
+    font-display: swap;
+    src: url("/fonts/courier-new/courbi.ttf");
+}
+
+@font-face {
+    font-family: "Courier New";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url("/fonts/courier-new/cour.ttf");
+}
+
+@font-face {
+    font-family: "Courier New";
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+    src: url("/fonts/courier-new/courbd.ttf");
+}

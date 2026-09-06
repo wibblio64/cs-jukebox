@@ -1,27 +1,17 @@
 {% extends "layout.njk" %}
 
 {% block metadata %}
-    <title>CS Jukebox - "{{ metadata.name }}"</title>
+    <title>CS Jukebox</title>
 {% endblock %}
 
 {% block content %}
-    <div class="moon"></div>
-    <div class="cloud-4"></div>
-    <div class="cloud-3"></div>
-    <div class="cloud-2"></div>
-    <div class="cloud-1"></div>
-    <div class="dragon">
-        <div class="dragon-inner"></div>
-    </div>
-    <div class="tracklist">
-        <div id="track-toggle" onclick="toggleTrack();"></div>
-        <div id="current-track"></div>
-        <div class="tracklist-inner">
-            {% for track in metadata.tracks %}
-            <div class="track" onclick="startTrack(`/music/{{ s }}/{{ track.src }}`, `{{ track.name }}`);">
-                <span class="track-number">{{ loop.index }}.</span>
-                {{ track.name }}
-            </div>
+    <div class="menu">
+        <div class="menu-title">Pick a soundtrack:</div>
+        <div class="menu-list">
+            {% for item in manifest %}
+            <a class="menu-item" href="/radio?s={{ item.s }}">
+                {{ item.name }}
+            </a>
             {% endfor %}
         </div>
     </div>

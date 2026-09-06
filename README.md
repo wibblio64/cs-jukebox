@@ -1,2 +1,4 @@
-# cs-jukebox
-A tiny, web-based Cave Story music-player
+# Cave Story Jukebox
+Runs on Express & Nunjucks
+
+MIT License

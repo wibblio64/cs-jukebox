@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- stylesheets -->
+        <link rel="icon" type="image/png" href="/images/favicon.png">
+        <link rel="stylesheet" href="/css/styles.css"/>
+
+        <!-- scripts -->
+        <script src="/js/sue.js"></script>
+
+        <!-- metadata -->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        {% block metadata %}{% endblock %}
+    </head>
+    <body>
+        <div id="root">
+        {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

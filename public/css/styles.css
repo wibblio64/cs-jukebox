@@ -1,0 +1,181 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    background-image: url("/images/bg.png");
+    background-size: 628px auto;
+    background-repeat: repeat-x;
+    background-color: black;
+}
+
+* {
+    image-rendering: pixelated;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.moon {
+    position: absolute;
+    right: 72px;
+    top: 72px;
+    width: 68px;
+    height: 68px;
+    background: no-repeat url("/images/moon.png");
+    background-size: cover;
+}
+
+.cloud1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    height: 80px;
+    background: repeat-x url("/images/cloud1.png");
+    background-size: auto 80px;
+    animation: cloud-scroll 1.5s linear infinite;
+}
+
+.cloud2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    height: 140px;
+    background: repeat-x url("/images/cloud2.png");
+    background-size: auto 140px;
+    animation: cloud-scroll 3s linear infinite;
+}
+
+.cloud3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    height: 186px;
+    background: repeat-x url("/images/cloud3.png");
+    background-size: auto 186px;
+    animation: cloud-scroll 4.5s linear infinite;
+}
+
+.cloud4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    height: 256px;
+    background: repeat-x url("/images/cloud4.png");
+    background-size: auto 256px;
+    animation: cloud-scroll 6s linear infinite;
+}
+
+@keyframes cloud-scroll {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -640px;
+    }
+}
+
+.dragon {
+    position: absolute;
+    left: 20%;
+}
+
+.dragon-inner {
+    position: relative;
+    width: 80px;
+    height: 72px;
+    background: no-repeat url("/images/dragon.png");
+    background-size: cover;
+    animation: dragon-float 3s ease-in-out infinite;
+}
+
+@keyframes dragon-float {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -25px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.tracklist {
+    position: absolute;
+    right: 20%;
+    width: 100%;
+    max-width: 450px;
+    height: 600px;
+    padding: 8px;
+    background: #232537;
+    border: 3px solid #444655;
+}
+
+#track-toggle {
+    position: absolute;
+    right: 8px;
+    width: 12px;
+    height: 12px;
+    opacity: 0.25;
+    background-size: cover;
+}
+
+#current-track {
+    position: absolute;
+    right: calc(50% + 8px);
+    transform: translate(50%, 0);
+    white-space: nowrap;
+    opacity: 0.5;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    color: white;
+}
+
+.tracklist-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: calc(100% - 16px);
+    margin-top: 16px;
+    overflow-y: auto;
+}
+
+.track {
+    padding: 4px;
+    border-bottom: 2px solid #444655;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: normal;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.track:hover {
+    font-weight: bold;
+}
+
+.track-number {
+    opacity: 0.5;
+    font-size: 12px;
+    padding-right: 12px;
+}

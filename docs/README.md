@@ -1,3 +1,16 @@
+# Running from Source
+To run the app from source, you just need Node (24.19.0+) & NPM (11.17.0+).
+
+You can check if you have either Node or NPM installed by running "node --version" or "npm --version", respectively. But this tutorial will assume that you have them installed.
+
+Open up your terminal, inside the folder containing the source, and type "npm install," to install all the packages needed.
+
+Next, type "npm run start" or "node src/app.js" to run the app.
+
+If the app is running correctly, a message saying "Server is running at http://localhost:3000" should show up in your terminal.
+
+If you navigate to the URL in your web browser, the app should show up.
+
 # How To Add a Custom Soundtrack
 To add a new soundtrack, make a new folder, in the "public/music" folder.
 

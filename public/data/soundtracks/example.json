@@ -1,0 +1,9 @@
+{
+    "name": "Example",
+    "tracks": [
+        {
+            "name": "Example",
+            "src": "example.mp3"
+        }
+    ]
+}

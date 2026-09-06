@@ -4,11 +4,11 @@ import { loadJSON } from "../utils.js";
 const router = express.Router();
 router.get("/", async (req, res) => {
     const { s } = req.query;
-    const data = await loadJSON(`./data/soundtracks.json`);
+    const metadata = await loadJSON(`./data/soundtracks/${s}.json`);
 
     res.render("home", {
         s: s,
-        data: data
+        metadata: metadata
     });
 });
 

@@ -3,4 +3,4 @@
 
 Runs on Express & Nunjucks
 
-MIT License
+BSD 2-Clause License

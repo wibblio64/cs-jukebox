@@ -7,5 +7,4 @@ function checkDarkMode() {
     }
     setTimeout(checkDarkMode, 1000);
 }
-
 checkDarkMode();

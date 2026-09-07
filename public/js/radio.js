@@ -1,7 +1,7 @@
 let toggled = false;
 let track = null;
 
-const toggleTrack = () => {
+function toggleTrack() {
     if (track === null) return;
     const toggleEl = document.querySelector("#radio-toggle");
     if (toggled) {
@@ -17,15 +17,15 @@ const toggleTrack = () => {
     }
 }
 
-const resumeTrack = () => {
+function resumeTrack() {
     if (track !== null) track.play();
 }
 
-const pauseTrack = () => {
+function pauseTrack() {
     if (track !== null) track.pause();
 }
 
-const startTrack = (src, name) => {
+function startTrack(src, name) {
     if (track !== null) {
         track.pause();
         track.currentTime = 0;

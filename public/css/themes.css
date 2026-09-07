@@ -10,7 +10,7 @@
     --moon-right: auto;
 }
 
-:root.dark-theme {
+:root[data-theme="dark"] {
     --bg-image: url("/images/dark/bg.png");
     --bg-color: black;
     --cloud1-bg: url("/images/dark/cloud1.png");

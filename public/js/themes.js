@@ -1,10 +1,10 @@
-function checkDarkMode() {
+function isNightTime() {
     const date = new Date();
-    if (date.getHours() < 6 || date.getHours() >= 18) {
-        document.documentElement.className = "dark-theme";
-    } else {
-        document.documentElement.className = "";
-    }
+    return date.getHours() < 6 || date.getHours() >= 18;
+}
+
+function checkDarkMode() {
+    document.documentElement.className = isNightTime() ? "dark-theme" : "";
     setTimeout(checkDarkMode, 1000);
 }
 checkDarkMode();

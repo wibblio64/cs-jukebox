@@ -1,4 +1,6 @@
 html {
+    scrollbar-color: #444655 #232537;
+    scrollbar-width: thin;
     scroll-behavior: smooth;
 }
 

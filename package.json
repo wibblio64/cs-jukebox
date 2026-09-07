@@ -1,14 +1,14 @@
 {
     "name": "cs-jukebox",
     "version": "1.0.0",
-    "description": "",
+    "description": "A tiny, web-based Cave Story-styled music-player.",
     "main": "src/app.js",
     "scripts": {
         "start": "node src/app.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
-    "author": "",
+    "author": "wibblio",
     "license": "ISC",
     "type": "module",
     "dependencies": {

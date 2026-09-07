@@ -1,4 +1,4 @@
-# Running from Source
+# 1.) Running from Source
 To run the app from source, you just need Node (24.19.0+) & NPM (11.17.0+).
 
 You can check if you have either Node or NPM installed by running "node --version" or "npm --version," respectively. But this tutorial will assume that you have them installed already.
@@ -13,7 +13,7 @@ If you navigate to the URL shown above in your web browser, the app should show 
 
 ![The app running correctly, showing the menu.](1/1.png)
 
-# How To Add a Custom Soundtrack
+# 2.) How To Add a Custom Soundtrack
 To add a new soundtrack, make a new folder, in the "public/music" folder.
 
 ![A new folder named "tutorial" in the music folder.](2/1.png)

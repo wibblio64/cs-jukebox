@@ -6,12 +6,12 @@ const toggleTrack = () => {
     const toggleEl = document.querySelector("#radio-toggle");
     if (toggled) {
         resumeTrack();
-        sfx.play("pause", (Math.random() / 2) + 0.5);
+        sfx.play("pause", (Math.random() * 0.25) + 0.875);
         toggled = false;
         toggleEl.style.backgroundImage = `url("/images/pause.png")`;
     } else {
         pauseTrack();
-        sfx.play("pause", (Math.random() / 2) + 0.5);
+        sfx.play("pause", (Math.random() * 0.25) + 0.875);
         toggled = true;
         toggleEl.style.backgroundImage = `url("/images/play.png")`;
     }

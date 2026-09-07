@@ -10,7 +10,7 @@
         <div class="menu-title">Pick an album:</div>
         <div class="menu-list">
             {% for item in manifest %}
-            <a class="menu-item" href="/radio?s={{ item.s }}" onmouseover="sfx.play('hover', (Math.random() / 2) + 0.5);">
+            <a class="menu-item" href="/radio?s={{ item.s }}" onmouseover="sfx.play('hover', (Math.random() * 0.25) + 0.875);">
                 {{ item.name }}
             </a>
             {% endfor %}

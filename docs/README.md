@@ -1,15 +1,11 @@
 # 1.) Running from Source
-To run the app from source, you just need Node (24.19.0+) & NPM (11.17.0+).
+To run the app from source, you just need Node (v24.19.0+) & NPM (v11.17.0+).
 
 You can check if you have either Node or NPM installed by running "node --version" or "npm --version," respectively. But this tutorial will assume that you have them installed already.
 
-Open up your terminal, inside the folder containing the source, and type "npm install," to install all the dependencies needed.
+Open up your terminal, inside the folder containing the source, and type "npm install," to install all the dependencies needed. Next, type "npm run start" or "node src/app.js" to actually start the app.
 
-Next, type "npm run start" or "node src/app.js" to actually start the app.
-
-If the app is running correctly, a message saying "Server is running at http://localhost:3000" should show up in your terminal.
-
-If you navigate to the URL shown above in your web browser, the app should show up, looking something like this below.
+If the app is running correctly, a message saying "Server is running at http://localhost:3000" should show up in your terminal. Navigate to the URL shown in the terminal, in your web browser, and the app should show up, looking something like this below.
 
 ![The app running correctly, showing the menu.](1/1.png)
 

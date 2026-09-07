@@ -8,6 +8,7 @@
     width: fit-content;
     min-width: 200px;
     height: fit-content;
+    max-height: 400px;
     padding: 8px 32px;
     background: #232537;
     border: 3px solid #444655;
@@ -28,6 +29,9 @@
     flex-direction: column;
     gap: 8px;
     text-align: left;
+    width: 100%;
+    height: calc(100% - 16px);
+    overflow-y: auto;
 }
 
 .menu-item {

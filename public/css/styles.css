@@ -9,10 +9,10 @@ body {
     padding: 0;
     overflow: hidden;
     user-select: none;
-    background-image: url("/images/bg.png");
+    background-image: var(--bg-image);
     background-size: 628px auto;
     background-repeat: repeat-x;
-    background-color: black;
+    background-color: var(--bg-color);
 }
 
 * {
@@ -33,54 +33,55 @@ body {
 
 .moon {
     position: absolute;
-    right: 72px;
+    left: var(--moon-left);
+    right: var(--moon-right);
     top: 72px;
     width: 68px;
     height: 68px;
-    background: no-repeat url("/images/moon.png");
+    background: no-repeat var(--moon-bg);
     background-size: cover;
 }
 
-.cloud-1 {
+.cloud1 {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 200%;
     height: 80px;
-    background: repeat-x url("/images/cloud1.png");
+    background: repeat-x var(--cloud1-bg);
     background-size: auto 80px;
     animation: cloud-scroll 1.5s linear infinite;
 }
 
-.cloud-2 {
+.cloud2 {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 200%;
     height: 140px;
-    background: repeat-x url("/images/cloud2.png");
+    background: repeat-x var(--cloud2-bg);
     background-size: auto 140px;
     animation: cloud-scroll 3s linear infinite;
 }
 
-.cloud-3 {
+.cloud3 {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 200%;
     height: 186px;
-    background: repeat-x url("/images/cloud3.png");
+    background: repeat-x var(--cloud3-bg);
     background-size: auto 186px;
     animation: cloud-scroll 4.5s linear infinite;
 }
 
-.cloud-4 {
+.cloud4 {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 200%;
     height: 256px;
-    background: repeat-x url("/images/cloud4.png");
+    background: repeat-x var(--cloud4-bg);
     background-size: auto 256px;
     animation: cloud-scroll 6s linear infinite;
 }
@@ -105,6 +106,7 @@ body {
     height: 72px;
     background: no-repeat url("/images/dragon.png");
     background-size: cover;
+    filter: drop-shadow(2px 2px 0 rgb(0, 0, 0, 0.25));
     animation: dragon-float 3s ease-in-out infinite;
 }
 

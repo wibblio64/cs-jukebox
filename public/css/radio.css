@@ -1,11 +1,15 @@
 .radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 20%;
-    width: 100%;
+    width: 90%;
     max-width: 450px;
-    height: 90%;
+    height: fit-content;
     max-height: 600px;
-    padding: 8px;
+    padding: 8px 32px;
     background: #232537;
     border: 3px solid #444655;
     box-shadow: 2px 2px 0 rgb(0, 0, 0, 0.25);
@@ -13,6 +17,7 @@
 
 #radio-toggle {
     position: absolute;
+    top: 8px;
     right: 8px;
     width: 12px;
     height: 12px;
@@ -22,6 +27,7 @@
 
 #radio-current-track {
     position: absolute;
+    top: 8px;
     right: calc(50% + 8px);
     transform: translate(50%, 0);
     white-space: nowrap;
@@ -35,6 +41,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
+    width: 100%;
     height: calc(100% - 16px);
     margin-top: 16px;
     overflow-y: auto;

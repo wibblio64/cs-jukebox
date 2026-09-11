@@ -2,18 +2,27 @@
     "name": "cs-jukebox",
     "version": "1.0.0",
     "description": "A tiny, web-based Cave Story-styled music-player.",
-    "main": "src/app.js",
+    "bin": "src/app.js",
+    "pkg": {
+        "assets": [
+            "views/**/*",
+            "public/**/*"
+        ]
+    },
     "scripts": {
-        "start": "node src/app.js",
+        "build": "pkg . -t node18-linux-x64,node18-win-x64",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
     "author": "wibblio",
     "license": "BSD-2-Clause",
-    "type": "module",
+    "type": "commonjs",
     "dependencies": {
         "chokidar": "^3.6.0",
         "express": "^5.2.1",
         "nunjucks": "^3.2.4"
+    },
+    "devDependencies": {
+        "pkg": "^5.8.1"
     }
 }

@@ -1,13 +1,15 @@
-import fs from "fs/promises";
-import path from "path";
+const fs = require("fs/promises");
+const path = require("path");
 
-export async function loadJSON(filePath) {
+async function loadJSON(filePath) {
     try {
-        const fullPath = path.join(process.cwd(), "public", filePath);
-        const data = await fs.readFile(fullPath, 'utf8');
+        const fullPath = path.join(process.execPath, "..", "assets", filePath);
+        const data = await fs.readFile(fullPath, "utf8");
         return JSON.parse(data);
     } catch (error) {
         console.error(`Error loading JSON from ${filePath}:`, error.message);
         throw error;
     }
 }
+
+module.exports = loadJSON;

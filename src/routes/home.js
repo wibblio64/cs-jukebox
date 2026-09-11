@@ -1,13 +1,13 @@
-import express from "express";
-import { loadJSON } from "../utils.js";
+const express = require("express");
+const loadJSON = require("../utils.js");
 
 const router = express.Router();
 router.get("/", async (req, res) => {
-    const manifest = await loadJSON(`./data/soundtracks/manifest.json`);
+    const manifest = await loadJSON(`./data/albums/manifest.json`);
 
     res.render("home", {
         manifest: manifest,
     });
 });
 
-export default router;
+module.exports = router;

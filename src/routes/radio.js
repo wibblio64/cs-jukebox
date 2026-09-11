@@ -1,10 +1,10 @@
-import express from "express";
-import { loadJSON } from "../utils.js";
+const express = require("express");
+const loadJSON = require("../utils.js");
 
 const router = express.Router();
 router.get("/radio", async (req, res) => {
     const { s } = req.query;
-    const data = await loadJSON(`./data/soundtracks/${s}.json`);
+    const data = await loadJSON(`./data/albums/${s}.json`);
 
     res.render("radio", {
         s: s,
@@ -12,4 +12,4 @@ router.get("/radio", async (req, res) => {
     });
 });
 
-export default router;
+module.exports = router;

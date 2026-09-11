@@ -1,6 +1,7 @@
-import express from "express";
-import nunjucks from "nunjucks";
-import router from "./router.js";
+const express = require("express");
+const nunjucks = require("nunjucks");
+const path = require("path");
+const router = require("./router.js");
 
 const app = express();
 
@@ -12,6 +13,7 @@ nunjucks.configure("views", {
 
 app.set("view engine", "njk");
 app.use(express.static("public"));
+app.use("/assets", express.static(path.join(process.execPath, "..", "assets")));
 app.use("/", router);
 
 const PORT = 3000;

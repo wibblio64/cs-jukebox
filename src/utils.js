@@ -1,15 +1,14 @@
-const fs = require("fs/promises");
-const path = require("path");
-
-async function loadJSON(filePath) {
-    try {
-        const fullPath = path.join(process.execPath, "..", "assets", filePath);
-        const data = await fs.readFile(fullPath, "utf8");
-        return JSON.parse(data);
-    } catch (error) {
-        console.error(`Error loading JSON from ${filePath}:`, error.message);
-        throw error;
-    }
+export const isNightTime = () => {
+    const date = new Date();
+    return date.getHours() < 6 || date.getHours() >= 18;
 }
 
-module.exports = loadJSON;
+export async function loadJSON(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        return await response.json();
+    } catch (error) {
+        console.error("Could not load JSON file:", error);
+    }
+}

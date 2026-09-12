@@ -3,7 +3,7 @@ To run the app from source, you just need Node (v24.19.0+) & NPM (v11.17.0+).
 
 You can check if you have either Node or NPM installed by running "node --version" or "npm --version," respectively. But this tutorial will assume that you have them installed already.
 
-Inside the folder containing the source, open up the terminal and type "npm install," to install all the dependencies needed. Next, type "npm run start" to actually start running the app. That's basically it
+Inside the folder containing the source, open up the terminal and type "npm install," to install all the dependencies needed. Next, type "npm run start" to actually start running the app. That's basically it, you're all set, after that.
 
 ![The app running correcWtly, showing the menu.](1/1.png)
 

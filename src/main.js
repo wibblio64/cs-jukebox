@@ -1,4 +1,4 @@
-import { app, BrowserWindow } from "electron";
+import { app, BrowserWindow, shell } from "electron";
 import path from "node:path";
 import started from "electron-squirrel-startup";
 
@@ -13,6 +13,11 @@ function createWindow() {
             preload: path.join(__dirname, "preload.js"),
             nodeIntegration: true
         },
+    });
+
+    window.webContents.setWindowOpenHandler(({ url }) => {
+        if (url.startsWith("http:") || url.startsWith("https:")) shell.openExternal(url);
+        return { action: "deny" };
     });
 
     if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {

@@ -42,8 +42,10 @@
     });
 
     onBeforeRouteLeave(() => {
-        track.currentTime = 0;
-        track.pause();
+        if (track !== null) {
+            track.currentTime = 0;
+            track.pause();
+        }
     });
 </script>
 

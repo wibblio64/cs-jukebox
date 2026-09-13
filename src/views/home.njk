@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+
+{% block metadata %}
+    <meta property="og:title" content="CS Jukebox"/>
+    <title>CS Jukebox</title>
+{% endblock %}
+
+{% block content %}
+    <div class="menu">
+        <div class="menu-title">Pick an album:</div>
+        <div class="menu-list">
+            {% for item in manifest %}
+            <a class="menu-item" href="/radio?s={{ item.s }}" onmouseover="sfx.play('hover');">
+                {{ item.name }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

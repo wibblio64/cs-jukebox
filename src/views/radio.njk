@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{% block metadata %}
+    <meta property="og:title" content="{{ data.name }}"/>
+    <title>CS Jukebox - "{{ data.name }}"</title>
+{% endblock %}
+
+{% block content %}
+    <div class="radio">
+        <div id="radio-toggle" onclick="toggleTrack();"></div>
+        <div id="radio-current-track"></div>
+        <div class="radio-inner">
+            {% for track in data.tracks %}
+            <div class="radio-track" onclick="startTrack(`/music/{{ s }}/{{ track.src }}`, `{{ track.name }}`);">
+                <span class="radio-track-number">{{ loop.index }}.</span>
+                {{ track.name }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

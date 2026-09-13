@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- scripts -->
+        <script src="/js/utils.js"></script>
+        <script src="/js/checkNode.js"></script>
+        <script src="/js/sounds.js"></script>
+        <script src="/js/themes.js"></script>
+        <script src="/js/radio.js"></script>
+
+        <!-- stylesheets -->
+        <link rel="icon" type="image/png" href="/images/favicon.png">
+        <link rel="stylesheet" href="/css/fonts.css"/>
+        <link rel="stylesheet" href="/css/themes.css"/>
+        <link rel="stylesheet" href="/css/styles.css"/>
+        <link rel="stylesheet" href="/css/not-found.css"/>
+        <link rel="stylesheet" href="/css/menu.css"/>
+        <link rel="stylesheet" href="/css/radio.css"/>
+
+        <!-- metadata -->
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="og:locale" content="en_US"/>
+        <meta name="og:description" content="A tiny, web-based Cave Story-styled music-player."/>
+        <meta name="og:site_name" content="CS Jukebox"/>
+        {% block metadata %}{% endblock %}
+    </head>
+    <body>
+        <div id="root">
+            <div class="moon"></div>
+            <div class="cloud4"></div>
+            <div class="cloud3"></div>
+            <div class="cloud2"></div>
+            <div class="cloud1"></div>
+            <div class="dragon">
+                <div class="dragon-inner"></div>
+            </div>
+            <footer class="footer">
+                <div style="margin-left: 16px;">Created by <a href="javascript:void(0);" onclick="nw.Shell.openExternal('https://wibblio.neocities.org/');">wibblio</a></div>
+                <div style="margin-right: 16px;">Back to <a href="/">Menu</a></div>
+            </footer>
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,16 @@
+{
+    "name": "cs-jukebox",
+    "main": "http://localhost:3000/",
+    "node-main": "js/app.js",
+    "node-remote": [
+        "http://localhost:3000/*"
+    ],
+    "window": {
+        "title": "CS Jukebox",
+        "width": 1024,
+        "height": 768,
+        "position": "center",
+        "icon": "icon.png",
+        "nodejs": true
+    }
+}

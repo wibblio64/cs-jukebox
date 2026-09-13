@@ -3,7 +3,7 @@ To run the app from source, you just need Node (v24.19.0+) & NPM (v11.17.0+).
 
 You can check if you have either Node or NPM installed by running "node --version" or "npm --version," respectively. But this tutorial will assume that you have them installed already.
 
-Inside the folder containing the source, open up the terminal and type "npm install," to install all the dependencies needed in the main folder. Then, type "cd src" to enter the source folder, and again type "npm install" to get all dependencies needed for the source, too. Go back to the root folder, and then, type "npm run start" to actually start running the app. If it opens, that's basically it, you're all set, after that.
+Inside the folder containing the source, open up the terminal and type "npm install," to install all the dependencies needed in the main folder. Then, type "cd src" to enter the source folder, and again type "npm install" to get all dependencies needed for the source, too. Go back to the root folder, "cd ..," and then, type "npm run start" to actually start running the app. If it opens, that's basically it, you're all set, after that.
 
 # 2.) Building
 To build from source, follow all thr steps from the guide above about running from source.

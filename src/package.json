@@ -13,5 +13,10 @@
         "position": "center",
         "icon": "icon.png",
         "nodejs": true
+    },
+    "dependencies": {
+        "chokidar": "^3.6.0",
+        "express": "^5.2.1",
+        "nunjucks": "^3.2.4"
     }
 }

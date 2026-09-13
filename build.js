@@ -13,6 +13,7 @@ try {
         ...options,
         platform: "win",
         arch: "x64",
+        outDir: "./dist/windows",
         app: {
             icon: "./src/icon.ico"
         }
@@ -21,7 +22,8 @@ try {
     await nwbuild({
         ...options,
         platform: "linux",
-        arch: "x64"
+        arch: "x64",
+        outDir: "./dist/linux"
     });
 }
 catch (error) {

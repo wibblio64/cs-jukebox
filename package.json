@@ -14,10 +14,5 @@
     "devDependencies": {
         "nw": "^0.115.0-sdk",
         "nw-builder": "^4.20.0"
-    },
-    "dependencies": {
-        "chokidar": "^3.6.0",
-        "express": "^5.2.1",
-        "nunjucks": "^3.2.4"
     }
 }

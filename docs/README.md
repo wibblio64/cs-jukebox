@@ -8,7 +8,7 @@ Inside the folder containing the source, open up the terminal and type "npm inst
 # 2.) Building
 To build from source, follow all thr steps from the guide above about running from source.
 
-Once you actually have the app successfully working, you can type "npm run build" to actually build the app. Depending on if you're on Linux or Windows, it will produce an "out" or a "dist" folder in the root containing a build for the OS you're running. On Linux, your packaged app should be in the "out" folder. If you're on windows, the packaged app will be in the "dist" folder.
+Once you actually have the app successfully working, you can type "npm run build" to actually build the app. It will create a "dist" folder, containing packages for Windows and Linux in separate folders appropriately named "windows" and "linux."
 
 MacOS is currently not supported.
 

@@ -8,14 +8,14 @@ Inside the folder containing the source, open up the terminal and type "npm inst
 # 2.) Building
 To build from source, follow all thr steps from the guide above about running from source.
 
-Once you actually have the app successfully working, you can type "npm run build" to actually build the app. Depending on if you're on Linux or Windows, it will produce an "out" folder in the root containing a build for the OS you're running.
+Once you actually have the app successfully working, you can type "npm run build" to actually build the app. Depending on if you're on Linux or Windows, it will produce an "out" or a "dist" folder in the root containing a build for the OS you're running. On Linux, your packaged app should be in the "out" folder. If you're on windows, the packaged app will be in the "dist" folder.
 
 MacOS is currently not supported.
 
 ![The app running correcWtly, showing the menu.](1/1.png)
 
 # 3.) Adding a Custom Album
-To add a new album, make a new folder, in the "assets/music" folder.
+To add a new album, make a new folder, in the "package.nw/public/music" folder.
 
 ![A new folder named "tutorial" in the music folder.](3/1.png)
 
@@ -23,7 +23,7 @@ Inside your music folder, add your song(s), in any format you want (preferably "
 
 ![A new file named "example.mp3" your the music folder.](3/2.png)
 
-Make a new ".json" file named after your music folder, in the "assets/data/albums" folder.
+Make a new ".json" file named after your music folder, in the "package.nw/public/data/albums" folder.
 
 ![A new ".json" in the albums folder matching the name of your music folder.](3/3.png)
 

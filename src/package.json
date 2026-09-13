@@ -1,5 +1,6 @@
 {
     "name": "cs-jukebox",
+    "version": "1.0.0",
     "main": "http://localhost:3000/",
     "node-main": "js/app.js",
     "node-remote": [
